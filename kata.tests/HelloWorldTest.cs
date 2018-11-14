@@ -7,11 +7,11 @@ namespace kata.tests
     public class HelloWorldTest
     {
         [Test]
-        public void HelloWorldShouldBeTrue()
+        public void HelloWorldClassShouldExist()
         {
-            var helloWorld = false;
+            var helloWorld = new HelloWorld();
 
-            helloWorld.Should().BeTrue();
+            helloWorld.Should().BeOfType<HelloWorld>();
         }
     }
 }
